@@ -1,3 +1,6 @@
+/* ========================================
+   GENERAL STYLES
+   ======================================== */
 
 * {
     margin: 0;
@@ -12,6 +15,10 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
+
+/* ========================================
+   NAVIGATION / HEADER
+   ======================================== */
 
 .nav {
     display: flex;
@@ -81,6 +88,10 @@ body {
 .menu a:hover::after {
     width: 100%;
 }
+
+/* ========================================
+   HERO SECTION (DESKTOP)
+   ======================================== */
 
 .hero {
     position: relative;
@@ -180,6 +191,10 @@ body {
 
 .hero-images img:hover {
     transform: scale(1.05);
+}
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
 
 .btn {
     display: inline-block;
@@ -207,6 +222,10 @@ body {
 .btn:active {
     transform: translateY(-1px);
 }
+
+/* ========================================
+   CREATIONS SECTION (DESKTOP)
+   ======================================== */
 
 .creations {
     padding: 100px 60px;
@@ -261,6 +280,10 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+
+/* ========================================
+   MOBILE HERO SECTION
+   ======================================== */
 
 .mobile-hero {
     display: none;
@@ -330,6 +353,10 @@ body {
     color: #3D2817;
 }
 
+/* ========================================
+   MOBILE CREATIONS SECTION
+   ======================================== */
+
 .mobile-creations {
     display: none;
     padding: 60px 30px;
@@ -358,6 +385,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
+/* ========================================
+   FOOTER
+   ======================================== */
 
 footer {
     background-color: #3D2817;
@@ -376,6 +406,10 @@ footer p:first-child {
     font-weight: bold;
     font-size: 18px;
 }
+
+/* ========================================
+   RESPONSIVE DESIGN - MOBILE
+   ======================================== */
 
 @media (max-width: 768px) {
     /* Navigation Mobile */
@@ -404,6 +438,7 @@ footer p:first-child {
         font-size: 16px;
     }
 
+    /* Hide Desktop Sections on Mobile */
     .hero {
         display: none;
     }
@@ -412,6 +447,7 @@ footer p:first-child {
         display: none;
     }
 
+    /* Show Mobile Sections */
     .mobile-hero {
         display: block;
     }
@@ -421,6 +457,7 @@ footer p:first-child {
     }
 }
 
+/* Desktop - Hide Mobile Sections */
 @media (min-width: 769px) {
     .mobile-hero {
         display: none;
@@ -431,6 +468,7 @@ footer p:first-child {
     }
 }
 
+/* Tablet Adjustments */
 @media (max-width: 1024px) and (min-width: 769px) {
     .hero {
         flex-direction: column;
@@ -454,6 +492,7 @@ footer p:first-child {
     }
 }
 
+/* Large Screens */
 @media (min-width: 1440px) {
     .nav {
         padding: 30px 100px;
@@ -476,10 +515,16 @@ footer p:first-child {
     }
 }
 
+/* ========================================
+   ANIMATIONS & TRANSITIONS
+   ======================================== */
+
+/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }
 
+/* Fade In Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -502,5 +547,4 @@ html {
 
 .creation-card:nth-child(3) {
     animation-delay: 0.4s;
-
 }
